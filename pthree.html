@@ -21,8 +21,6 @@
         crossorigin="anonymous">
     <title>Four Page Bootstrap Demo</title>
 
-  
-
 
 
     <!-- Hotjar Tracking Code for https://peulogio.github.io/unit19/ -->
@@ -74,8 +72,8 @@
                             Page Three
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="pthree.html#heading1">My Heading1</a>
-                            <a class="dropdown-item" href="pthree.html#heading2">My Heading2</a>
+                            <a class="dropdown-item" href="pthree.html#heading1">Modal Section</a>
+                            <a class="dropdown-item" href="pthree.html#heading2">Tooltips Section</a>
                         </div>
                     </li>
                 </ul>
@@ -120,7 +118,7 @@
 
     <div class="container">
 
-        <div class="jumbotron justify-content-between" style="background-image: url(card1.jpg); background-size: 100%;">
+        <div class="jumbotron justify-content-between" id="heading1" style="background-image: url(card1.jpg); background-size: 100%;">
             <div class="row" style="height: 150px;"></div>
             <h2 class="display-4" style="color:white;">Modal Section</h2>
             <p class="lead">
@@ -158,22 +156,17 @@
     <!--Tooltips within Cards-->
     <div class="container">
         <div class="card">
-            <div class="card-header">
-                Featured
+            <div class="card-header" id="heading2">
+                Tooltips Section
             </div>
             <div class="card-body">
                 <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.<a href="#" data-toggle="tooltip" title="Hooray!"> Hover over me</a></p>
 
-                <a href="#" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Go somewhere</a>
+                <a href="#" class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Tooltip on Right">Go somewhere</a>
             </div>
         </div>
     </div>
-
-    <div class="container">
-            <h3>Tooltip Example</h3>
-            <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
-          </div>
 
     <div class="container mt-5">
         <!--Figure-->
@@ -186,12 +179,7 @@
 
 
 
-      <!--Initialize tooltips THIS ISN"T WORKING-->
-      <script>
-            $(document).ready(function () {
-                $('[data-toggle="tooltip"]').tooltip();
-            });
-        </script>
+
 
     <!--Java script-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -200,6 +188,12 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+<!--Tooltips Initialize-->
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>
