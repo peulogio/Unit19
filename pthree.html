@@ -61,8 +61,10 @@
                             Page Two
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="ptwo.html#heading1">My Heading1</a>
-                            <a class="dropdown-item" href="ptwo.html#heading2">My Heading2</a>
+                                <a class="dropdown-item" href="ptwo.html#heading0">Carousel</a>
+                                <a class="dropdown-item" href="ptwo.html#heading1">Dropdown Button Group</a>
+                                <a class="dropdown-item" href="ptwo.html#heading2">Accordion Collapsible Cards</a>
+                                <a class="dropdown-item" href="ptwo.html#heading3">Form</a>
                         </div>
                     </li>
 
@@ -74,6 +76,7 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="pthree.html#heading1">Modal Section</a>
                             <a class="dropdown-item" href="pthree.html#heading2">Tooltips Section</a>
+                            <a class="dropdown-item" href="pthree.html#heading3">Figure with Caption</a>
                         </div>
                     </li>
                 </ul>
@@ -115,10 +118,11 @@
             </nav>
         </div>
     </div>
-
+    <div class="row" style="height:50px;" id="heading1">
+        </div>
     <div class="container">
 
-        <div class="jumbotron justify-content-between" id="heading1" style="background-image: url(card1.jpg); background-size: 100%;">
+        <div class="jumbotron justify-content-between"  style="background-image: url(card1.jpg); background-size: 100%;">
             <div class="row" style="height: 150px;"></div>
             <h2 class="display-4" style="color:white;">Modal Section</h2>
             <p class="lead">
@@ -154,23 +158,30 @@
     </div>
 
     <!--Tooltips within Cards-->
+    <div class="row" style="height:50px;" id="heading2">
+        </div>
     <div class="container">
         <div class="card">
-            <div class="card-header" id="heading2">
-                Tooltips Section
+            <div class="card-header" >
+                <h2>Tooltips Section</h2>
             </div>
             <div class="card-body">
                 <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.<a href="#" data-toggle="tooltip" title="Hooray!"> Hover over me</a></p>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                    <a href="#" data-toggle="tooltip" title="Hooray!">
+                    Hover over me</a>
+                </p>
 
                 <a href="#" class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Tooltip on Right">Go somewhere</a>
             </div>
         </div>
     </div>
-
+    <div class="row" style="height:50px;" id="heading3">
+        </div>
     <div class="container mt-5">
         <!--Figure-->
         <figure class="figure">
+            <h2>Figure with Caption</h2>
             <img src="card2.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
             <figcaption class="figure-caption">A caption for the above image.</figcaption>
         </figure>
@@ -188,7 +199,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-<!--Tooltips Initialize-->
+    <!--Tooltips Initialize-->
     <script>
         $(document).ready(function () {
             $('[data-toggle="tooltip"]').tooltip();
