@@ -21,6 +21,8 @@
         crossorigin="anonymous">
     <title>Four Page Bootstrap Demo</title>
 
+  
+
 
 
     <!-- Hotjar Tracking Code for https://peulogio.github.io/unit19/ -->
@@ -80,7 +82,7 @@
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                            <a href="search.html" style="color:inherit">Search </a>
+                        <a href="search.html" style="color:inherit">Search </a>
                     </button>
                 </form>
             </div>
@@ -115,6 +117,82 @@
             </nav>
         </div>
     </div>
+
+    <div class="container">
+
+        <div class="jumbotron justify-content-between" style="background-image: url(card1.jpg); background-size: 100%;">
+            <div class="row" style="height: 150px;"></div>
+            <h2 class="display-4" style="color:white;">Modal Section</h2>
+            <p class="lead">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                    Launch Modal
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Text goes here for this modal.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    </p>
+    </div>
+    </div>
+    </div>
+
+    <!--Tooltips within Cards-->
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                Featured
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                <a href="#" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+            <h3>Tooltip Example</h3>
+            <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+          </div>
+
+    <div class="container mt-5">
+        <!--Figure-->
+        <figure class="figure">
+            <img src="card2.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+            <figcaption class="figure-caption">A caption for the above image.</figcaption>
+        </figure>
+
+    </div>
+
+
+
+      <!--Initialize tooltips THIS ISN"T WORKING-->
+      <script>
+            $(document).ready(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
+
     <!--Java script-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
